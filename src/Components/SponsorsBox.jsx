@@ -3,8 +3,10 @@ import React from "react";
 function SponsorsBox({ logo, profile, desc, createBy, sons, active }) {
   return (
     <div
-      className={`bg-[#090F1C] p-5 flex justify-between flex-col gap-y-3 rounded-2xl border border-[#1C2635] relative overflow-hidden shadow-inner custom-shadow max-w-[380px] md:max-w-none md:mx-0 mx-auto${
-        active ? "translate translate-y-5" : "translate-y-0"
+      className={`p-5 flex justify-between flex-col gap-y-3 rounded-2xl border border-[#1C2635] relative overflow-hidden shadow-inner custom-shadow max-w-[380px] md:max-w-none md:mx-0 mx-auto transition-all duration-300 ${
+        active
+          ? " bg-[#090F1C]"
+          : " bg-gradient-to-br from-gray-900/50 via-gray-800/25 to-gray-900/50 backdrop-blur-xs opacity-30 translate-y-3"
       }`}
     >
       <div>

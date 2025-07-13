@@ -25,7 +25,7 @@ const filterBox = [
     createBy: "MaKayla P.",
     profile: prof01,
     sons: "Disney",
-    status: "ecommerce",
+    status: "Enteprise",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const filterBox = [
     createBy: "Andrew K.",
     profile: prof02,
     sons: "Samsung",
-    status: "web apps",
+    status: "Web Apps",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const filterBox = [
     createBy: "Lucy D. ",
     profile: prof02,
     sons: "Rio",
-    status: "web apps",
+    status: "Web Apps",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const filterBox = [
     createBy: "Pavel M.",
     profile: prof04,
     sons: "Canon",
-    status: "enteprise",
+    status: "Entepris",
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const filterBox = [
     createBy: "Miriam E.",
     profile: prof05,
     sons: "Cadbury",
-    status: "ecommerce",
+    status: "eCommerce",
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const filterBox = [
     createBy: "Eloise V.",
     profile: prof06,
     sons: "Maffell",
-    status: "ecommerce",
+    status: "eCommerce",
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ const filterBox = [
     createBy: "Pierre-Gilles L.",
     profile: prof07,
     sons: "Binance",
-    status: "web apps",
+    status: "Enteprise",
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ const filterBox = [
     createBy: "Danielle K.",
     profile: prof08,
     sons: " Forbes Inc.",
-    status: "web apps",
+    status: "Web Apps",
   },
   {
     id: 9,
@@ -97,7 +97,7 @@ const filterBox = [
     createBy: "Mary P.",
     profile: prof09,
     sons: "Ray Ban",
-    status: "web apps",
+    status: "Enteprise",
   },
 ];
 
