@@ -12,7 +12,7 @@ function CruipLan() {
   return (
     <>
       <Nav />
-      <main>
+      <main className="">
         <Hero />
         <TailoredWorkflows />
         <AdvancedControls />

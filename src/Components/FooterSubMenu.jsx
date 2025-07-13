@@ -1,7 +1,6 @@
 import React from "react";
 
 function FooterSubMenu({ title, subs }) {
-  console.log(subs);
   return (
     <div>
       <span className="text-[#E5E7EB] text-sm font-medium">{title}</span>

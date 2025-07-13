@@ -7,6 +7,7 @@ import { DiCssTricks } from "react-icons/di";
 import { GiOpenWound } from "react-icons/gi";
 import { LuWind } from "react-icons/lu";
 import { FaBalanceScaleRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Sponsors() {
   const [active, setActive] = useState("View All");
@@ -23,7 +24,13 @@ function Sponsors() {
             build healthier and happier workspaces from anywhere in the world.
           </p>
         </div>
-        <div className=" hidden lg:flex items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className=" hidden lg:flex items-center justify-center"
+        >
           <div className="rounded-full bg-[#0E1422] items-center gap-x-3 h-10  inline-flex mx-auto px-2 py-2">
             <SponsorsFilterItem
               icon={TbCube3dSphere}
@@ -56,8 +63,14 @@ function Sponsors() {
               onClick={() => setActive("Enteprise")}
             />
           </div>
-        </div>
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5"
+        >
           {SponsorsData.map((d) => (
             <SponsorsBox
               key={d.id}
@@ -65,7 +78,7 @@ function Sponsors() {
               active={active === "View All" || d.status === active}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

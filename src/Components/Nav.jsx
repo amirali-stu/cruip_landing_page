@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "/images/logo/logo.svg";
 
 function Nav() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setShow(true);
+  }, []);
+
   return (
-    <header className="w-full bg-primer px-4 py-4 sm:px-6 flex items-center justify-center">
+    <header className="w-full px-4 py-4 sm:px-6 flex items-center justify-center">
       <div className="max-w-[1104px] w-full px-4 rounded-2xl border-[0.5px] border-[#313C4E] h-[52px] flex items-center justify-between bg-[#0F1726] relative z-50">
         <div>
           <img src={logo} alt="logo" />
