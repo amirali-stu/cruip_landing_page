@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #video-poster {
+    position: relative;
+    /* یا هر ارتفاعی که بخوای */
+  }
+
+  #video-poster::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* خلاصه‌تر و تمیزتر */
+    z-index: 10;
+    background-color: rgba(10, 31, 164, 0.058); /* نیمه‌شفاف بهتره */
+  }
+
+  #text-effect::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    /* background-color: red; */
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(199, 210, 254, 0.5)
+    );
+    top: 12px;
+    bottom: auto;
+    right: 110%;
+  }
+  #text-effect::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(199, 210, 254, 0.5),
+      transparent
+    );
+    top: 12px;
+    bottom: auto;
+    left: 110%;
+  }
+
+  .border-gradient-top {
+    border-top: 0.5px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        transparent,
+        rgba(148, 163, 184, 0.2),
+        transparent
+      )
+      1;
+  }
+
+  .custom-shadow::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 8px;
+    box-shadow: 0 2px 4px #4e62812f inset;
+    z-index: 0;
+  }
+
+  /* .bg-linear {
+    background: linear-gradient(to right, transparent, #, transparent);
+  } */
+
+  .custom-shadow::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 8px;
+    box-shadow: 0 -2px 4px #4e62812f inset;
+    z-index: 0;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center flex-col;
+  }
+}
