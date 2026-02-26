@@ -5,7 +5,7 @@ import Hero from "./Components/Hero";
 import TailoredWorkflows from "./Components/TailoredWorkflows";
 import AdvancedControls from "./Components/AdvancedControls";
 import Sponsors from "./Components/Sponsors";
-import Platform from "./Components/platform";
+import Platform from "./Components/Platform";
 import Footer from "./Components/Footer";
 
 function CruipLan() {
